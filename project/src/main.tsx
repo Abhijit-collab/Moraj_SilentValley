@@ -34,7 +34,8 @@ const enableMediaProtection = () => {
 enableMediaProtection();
 
 const comingSoonFlag = String(import.meta.env.VITE_COMING_SOON ?? '').toLowerCase();
-const comingSoonEnabled = comingSoonFlag === 'true' || (import.meta.env.PROD && comingSoonFlag !== 'false');
+// Keep the live site visible unless Coming Soon is explicitly turned on.
+const comingSoonEnabled = comingSoonFlag === 'true';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
