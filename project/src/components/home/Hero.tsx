@@ -91,7 +91,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 min-h-screen flex flex-col justify-center items-center text-center px-4">
+      <div className="relative z-10 min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24 pb-10 sm:pb-0">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -102,7 +102,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="text-6xl md:text-8xl font-light mb-8 text-white [text-shadow:_0_6px_18px_rgba(0,0,0,0.55)]"
+            className="text-4xl sm:text-5xl md:text-8xl font-light mb-6 sm:mb-8 text-white [text-shadow:_0_6px_18px_rgba(0,0,0,0.55)]"
           >
             {title}
           </motion.h1>
@@ -110,7 +110,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="text-xl md:text-2xl text-white font-light mb-16 max-w-2xl mx-auto leading-relaxed [text-shadow:_0_4px_14px_rgba(0,0,0,0.45)]"
+            className="text-base sm:text-lg md:text-2xl text-white font-light mb-10 sm:mb-16 max-w-2xl mx-auto leading-relaxed [text-shadow:_0_4px_14px_rgba(0,0,0,0.45)]"
           >
             {subtitle}
           </motion.p>
@@ -139,7 +139,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
         </motion.div>
 
         {/* Bottom Info Container */}
-        <div className="absolute bottom-4 sm:bottom-8 left-0 right-0 flex flex-col sm:flex-row justify-between items-center px-4 sm:px-12 gap-12 sm:gap-0">
+        <div className="relative mt-4 sm:mt-0 sm:absolute sm:bottom-8 left-0 right-0 flex flex-col sm:flex-row justify-between items-center px-4 sm:px-12 gap-8 sm:gap-0">
           {/* Location Tag */}
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
