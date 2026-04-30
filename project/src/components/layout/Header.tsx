@@ -85,7 +85,7 @@ const Header: React.FC = () => {
                 className="h-10 w-auto object-contain"
                 loading="eager"
               />
-              Silent valley
+              Silent Valley
             </motion.a>
             
             {/* Desktop Navigation */}
