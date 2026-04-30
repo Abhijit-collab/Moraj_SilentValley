@@ -121,7 +121,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.5 }}
           transition={{ delay: 1.5, duration: 1 }}
-          className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
+          className="hidden sm:block absolute bottom-12 left-1/2 transform -translate-x-1/2"
         >
           <div className="w-[1px] h-24 bg-white/20 relative overflow-hidden">
             <motion.div

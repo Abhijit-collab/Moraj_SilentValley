@@ -31,7 +31,9 @@ const enableMediaProtection = () => {
   });
 };
 
-enableMediaProtection();
+if (import.meta.env.PROD) {
+  enableMediaProtection();
+}
 
 const comingSoonFlag = String(import.meta.env.VITE_COMING_SOON ?? '').toLowerCase();
 // Keep the live site visible unless Coming Soon is explicitly turned on.
