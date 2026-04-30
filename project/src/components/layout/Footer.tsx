@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
             >
               <h4 className="text-lg font-light mb-6">Hours</h4>
               <ul className="space-y-3 text-gray-400 font-light">
-                <li className="whitespace-nowrap">Monday - Sunday: 10:30 AM - 7:00 PM</li>
+                <li>Monday - Sunday: 10:30 AM - 7:00 PM</li>
               </ul>
             </motion.div>
           </div>
